@@ -20,6 +20,7 @@
   - More damaging (wave effect), raised floors are typically protected
 
 ### Raised floor Standards 
+- Withstand a uniform load of  1220kg/m2 or load of 454kg on any 6.5cm2, with max deflection of 2.5mm
 - NFPA 251 : Fire resistant for at least 1 hour
 - IEC-61000-4-2, anti-static
 
