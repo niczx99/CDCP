@@ -17,7 +17,7 @@
 ## Redundancy Options
 - Automatic Transfer Switch (ATS) - Mechanical Breaker
   - Choose power between Primary / Secondary Power Source
-  - > 50ms
+  - \> 50ms
 - Static Transfer Switch (STS) - Electrical Breaker
     - < 20ms
 - Break Before Make
