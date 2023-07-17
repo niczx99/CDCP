@@ -63,7 +63,7 @@ Right = Path B
     - Standard cabling : less flexible, fixed power rating, inexpensive
     - Busbar Trunking (BBT): 1-phase / 3-phase, Flexible Power Rating, Breaker at each tap-off, Expensive
 
-## Cable Distribution MEthod
+## Cable Distribution Method
 - Trunking - enclosed
 - Trays - lay power cables to PDU or DB within data centre
 - Ladders - heavy, large dimension cables
@@ -88,7 +88,7 @@ Right = Path B
   - Raised Floor
 
 ## Common Mode Noise (CMN)
-- Voltage between neutral and ground
+- Voltage (difference) between neutral and ground
 - Long Cable Runs, harmonics and imbalance between phases could lead to an increase of CMN
 - To Reduce CMN, add in an isolation transformer
   
@@ -126,3 +126,128 @@ Right = Path B
 - First number : Dust
 - Second number : Liquid
 - The higher the stronger
+
+## Power Quality
+- Parameters to consider:
+  - Voltage: Nominal +/- 10%
+  - Frequency: Nominal +/- 1%
+  - CMN: < 1% of Phase to Neutral
+  - Total Harmonics Distortion of Voltage (THDv): < 8% (non-linear load)
+  - Total Harmonics Distortion of Current (THDi): < 12%
+- Harmonics
+  - Distortion of sine wave
+  - Cause heat, resulting in reliability issues
+  - Active or passive filters and/or oversize the incoming supply with generator
+  - THDi - measured on the input
+    - 6 pulse Thyristor Rectifier: 30%
+    - 12 pulse Thyristor Rectifier: 12%
+    - IGBT based Rectifier: 3-5%
+  - THDv - measured on the output
+    - Linear load: < 3-5%
+    - non linear load: < 5-8%
+  - THDi created THDv
+
+## Power: Real versus apparent
+- Real power = Watt
+- Apparent power = VA
+- Power Factor = ratio between real and apparent power
+- Watt = Volt * Ampere * Form Factor
+- Power Factor = 0 - 1
+
+## Power: Label versus actual consumption
+- Rating on ICT-equipment does not reflect the actual power usage
+- 20-40% < label power
+
+## Power: Sizing up power usage
+6.53
+
+## Power: Data Centre Incoming Power Sizing
+6.55
+
+## Power: Generator sets
+- Size of generator set depends on
+  - kVA/kW of the installation attached
+  - Expected inrush currents (spike) on the generators during operations
+  - Harmonics returning from the connected installation
+- Test regularly
+  - Free-running: at least monthly
+  - Full Load test: at least quarterly
+- Fuel level test and contamination
+- Emergency lights
+
+## UPS
+- Static
+  - Electronic component
+  - Need batteries
+  - One of the oldest technology
+  - 500VA - 1.6MVA
+  - Require Cooling
+- Dynamic (combine ups and generator)
+  - Mechanical component
+  - Diesel engine, fly wheel, power generator
+  - Heavy
+  - 200kVA - 3000kVA
+  - Small batteries to start engine
+  - Does not require cooling
+
+- Static UPS technology
+  - 6.61: Offline/VFD (Voltage and Frequency Dependent), Line interactive/VI (Voltage Independent)
+  - True online double conversion/VFI (Voltage and Frequency Independent)
+
+- UPS running mode
+  - UPS in normal
+  - UPS running on batteries (Utility fail)
+  - UPS running on static bypass (UPS fail)
+  - UPS running on maintenance bypass (UPS in maintenance, no power)
+
+- UPS installation
+  - Parallel of UPS to increase: Availability and Power rating
+  - Parallel configuration:
+    - Bypass/ Hot-Standby Parallel - old
+    - Parallel Redundant - SPOF, not flexible for scaling 
+    - Isolated Parallel Redundant - most reliable, easy to scale
+  - Centralised battery bank
+    - Multiple UPS connect to same battery bank
+   
+- Dynamic UPS
+  - 6.81-6.83
+
+## Batteries
+- Flooded Cell
+  - High current
+  - Long life span (15-20 years)
+  - Required maintenance
+  - Upright position
+  - Electrolyte subject to burn
+- Sealed Lead Acid/Valve Regulated Lead Acid (SLA/VRLA)
+  - 5 years/10-12 years
+  - Ambient temperature (25C)
+  - Cheap
+  - Low self discharge
+  - No memory effect
+  - Slow recharging (8hours or more)
+  - Must store in charged state
+  - Cannot stand high temperature
+- Lithium-Ion (Li-ion)
+  - Long life-time (10 years)
+  - no memory effect
+  - allows for fast charging
+  - smaller footprint and lighter weight
+  - Expensive
+  - Prevent unsafe temperature during charging/discharging * risk of fire
+- Nickel-Cadmium (Ni-Cd)
+  - Long life-time (20 years)
+  - No cooling required
+  - Reliable/predictable life
+  - Fast Charging
+  - Have memory effect
+  - Need special charger
+  - Expensive
+
+
+## Renewable Energy Factor (REF)
+- REF = Eren(Energy from renewable energy source)/Edc(Total annual energy used by the data centre)
+
+
+## Summary
+:OOOOOOO
