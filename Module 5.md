@@ -14,8 +14,8 @@
 - Corridors: 200 - 300 Lux
 - Service area: 150 - 200 Lux
 - TIA 942; three level of light strength depending on location and usage
-  - Level 1 : Unoccupied
-  - Level 2 : Initial entry, sufficient lighting to allow safe passage
+  - Level 1 : Unoccupied, 50-100 Lux for effective use of surveillance equipment
+  - Level 2 : Initial entry, sufficient lighting to allow safe passage, eg. motion sensor lighting to provide adequate illuminance
   - Level 3 : Occupied space - maintenance and interaction with equipment, 500 Lux on the ground and 200 Lux on the wall
  
 ## Light fixtures and placement
