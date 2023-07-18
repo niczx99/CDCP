@@ -214,3 +214,16 @@ CFM = Cubic Feet per minute
 - 2x heat rejection compare to one phase
 - Heat is removed by liquid-to-gas phase change
 - More expensive but can cool equipment with very high heat load 
+
+## Containment
+- Compartmentalized area to contain either hot air, cold air or both
+- Can be done with or without a raised floor
+- Separate hot air and cold air
+### Cold aisle
+- Entire area
+### Hot aisle
+- Small area
+
+## Seasonal Thermal Energy Storage
+- Store energy during one season and release during another season
+- Aquifier Thermal Energy Storage (ATES)
