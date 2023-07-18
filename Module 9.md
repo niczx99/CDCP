@@ -73,3 +73,144 @@ Precision air conditioner, condenser inside data centre
 
 ### Refrigerant
 R410a, R22 phase out as got impact to environment
+
+### Air conditioning
+- Air cooled, Self contained
+  - Cheap installation, Easy to maintain
+  - Heat exhaust pipe, low sensible cooling capacity, high operating cost
+- Air cooled, Split System/Direct Expansion(DX)
+  - Low purchase cost, easy to maintain and expand
+  - Limitation to length of pipe run, operation cost can be high, one CRAC one cooler
+- Fluid cooled (Water-Glycol)
+  - Longer pipe runs, Multiple CRACs can use same dry cooler, can be more cost effective than DX
+  - High purchase cost, Glycol is used to prevent freezing, higher operational cost
+- Chilled water
+  - Lower cost in long run than DX, water is more efficient than gas, longer pipe runs, share chiller (n+1 for redundancy)
+  - High initial cost, typically for large computer room
+- Hybrid
+  - Water to save cost
+  - Change to gas to maintenance chiller
+
+- Chiller Plants
+  - Outdoor (air-cooled), indoor (water-cooled)
+  - Require redundant for pipe and chillers (Concurent Maintainable, Rated 3)
+  - High energy efficient due to hybrid and free cooling
+  - Design
+    - Pumps
+    - Buffer tanks
+    - Acoustic
+  
+### Direct/Indirect Air Handler
+  - Direct Air Handler
+    - Supply outdoor air directly into the data centre
+    - Require Filter for air contamination (quality and humidity)
+  - Indirect Air Handler
+    - Use cold air from outside to cool down hot air from inside
+    - Reduce risk of air contamination
+
+  - Pros
+    - Energy efficient
+    - Lowest possible Power Usage Effectiveness (PUE)
+    - Down sizing of electrical infrastructure 
+    - Fast Return on Investment
+    - Unit is located outside
+  - Cons
+    - High water usage (for indirect air handler with adiabatic cooling)
+    - Direct air handler might pollute the data centre
+
+### Up Flow / Down Flow
+- Up flow
+  - Limited air flow guidance (mixture of hot and cold air)
+  - Cold air bottom, hot air top
+- Down flow
+  - Air guided through raise floor
+  - Cold air top, hot air bottom
+
+## Raised floor setup
+### Placement of equipment
+- Classroom
+- Hot and Cold Aisle setup
+- Hot and Cold Aisle setup with suspended ceiling
+- Air conditioning position
+  - Perpendicular to hot aisle
+    - Fast return of hot air
+    - More evenly equalised air pressure
+- Higher density equipment at bottom
+- Avoid air leakage and short circuit air
+  - Blanking panel, grommets
+
+### Temperature and Air Volume
+CFM = Cubic Feet per minute
+1kW cooling required about 1000/1100 CFM
+- Most of the time cooling issues are not caused by temperature / humidity set points on the air conditioners but because of air volume shortage
+- Measure airflow and compare to requirement
+
+### Placement of perforated tile and equipment
+- Distribute head load in data centre
+- Closest rack need to be place 1.8m/6 feet away from air conditioner to avoid negative pressure
+
+### Computer/Server room
+- 12-18 meters throw
+- VSD
+- Too long required placement of air conditioners on both sides
+
+## Non-raised floor cooling
+- front-to-rear cooling air flow
+- all cabling run over head
+- Slab must be treated with proper paint to avoid contamination
+
+### In-row cooling
+- Close to heat lead for better efficiencies for air flow
+- Less rack per m2
+
+### Overhead duct
+- cold air blow from overhead duct to cold aisle (front)
+- hot air flow back to overhead duct from hot aisle (back)
+- Require well design to ensure enough air volume can be dumped and extracted at the right locations
+- Require to inspect and clean regularly
+
+### Wall flow
+- Air conditioners mounted in the service corridor and blow air horizontally into the data centre
+- Return air is ducted to the service corridor
+- Require containment for hot aisle
+
+## Supplemental Cooling
+### Floor mount
+- Cold air ducting system to increase CFM
+  - Neighboring rack could have potential cooling impact
+### Hot air fans
+- Return hot air quickly back to CRAC
+  - assist on hot air removal
+### In row cooling
+- Close to racks to increase efficiency on airflow
+### Rear door heat exchanger
+- Pre-cool the hot air so it can be circulated back into the existing room
+- Reduce working load of CRAC
+- 15kW
+### Self-contained racks
+- Fully ducted supply and return
+- Speciallized racks
+- Water, Dielectric, Refrigerant, Gas
+- Fire supression considerations
+- 18-35 kW
+
+## Liquid immersion cooling
+- Submerging computer components in dielectric coolant
+- Advantages:
+  - Better efficiency
+  - 10X heat rejection
+  - No noise, no fan
+  - Less space 
+- Disadvantages:
+  - Specific hardware design
+  - Leakage / spills
+  - Higher initial cost
+### Single phase immersion
+- Energy is required to pump the coolant
+- No state change of coolant
+- No vapor to contaminate the environment
+
+### Two phase immersion
+- 2x heat rejection compare to one phase
+- Heat is removed by liquid-to-gas phase change
+- More expensive but can cool equipment with very high heat load 
