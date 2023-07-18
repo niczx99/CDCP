@@ -49,3 +49,6 @@
 - Blanking panel to avoid mixing of hot air and cold air (metal/plastic)
 - Arrange racks as long as possible to trap cold air
   - but take escape path into considerations
+- Seismic protection
+  - For data centres build in location with seismic activity
+  - seismic platform
