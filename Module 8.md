@@ -1,13 +1,13 @@
 # Module 8 : Equipment Racks
 ## Rack sizes
-### 19-inch rack, width = 2 feet/24inches/600mm
-height of electrical module = 1.75inches (44.45mm)
-various depth; 600-1200mm
-match the typical 600mm raised floor tile size
+19-inch rack, width = 2 feet/24inches/600mm
+- height of electrical module = 1.75inches (44.45mm)
+- various depth; 600-1200mm
+- match the typical 600mm raised floor tile size
 
-### 24-inch rack, width = 2.62feet/31.5inches/800mm
-typically used when large amount of cabling is required
-does not match the raised floor tile size
+24-inch rack, width = 2.62feet/31.5inches/800mm
+- typically used when large amount of cabling is required
+- does not match the raised floor tile size
 
 ## Racks types
 - Two post rack
