@@ -214,20 +214,22 @@ Right = Path B
 
 ## Batteries
 - Flooded Cell
-  - High current
+  - High current - Rectifier
   - Long life span (15-20 years)
-  - Required maintenance
+  - Required maintenance (replenish)
   - Upright position
   - Electrolyte subject to burn
 - Sealed Lead Acid/Valve Regulated Lead Acid (SLA/VRLA)
-  - 5 years/10-12 years
-  - Ambient temperature (25C)
-  - Cheap
+  - 5 years (3-4 years)/10-12 (7-8 years) years design life =/ service life
+  - Ambient temperature (25 C)
+  - Cheap according to Lead price
   - Low self discharge
   - No memory effect
   - Slow recharging (8hours or more)
-  - Must store in charged state
+  - Must store in charged state (charge every 3 months, maximum)
   - Cannot stand high temperature
+  - Maintenance free
+  - Expand horizontally
 - Lithium-Ion (Li-ion)
   - Long life-time (10 years)
   - no memory effect
@@ -235,12 +237,14 @@ Right = Path B
   - smaller footprint and lighter weight
   - Expensive
   - Prevent unsafe temperature during charging/discharging * risk of fire
+  - Expand vertically
+  - Restrict transportation of Li-ion
 - Nickel-Cadmium (Ni-Cd)
   - Long life-time (20 years)
   - No cooling required
   - Reliable/predictable life
   - Fast Charging
-  - Have memory effect
+  - Have memory effect (ensure 100% (10%) discharge then only charge back)
   - Need special charger
   - Expensive
 
