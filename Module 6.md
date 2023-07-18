@@ -151,7 +151,7 @@ Right = Path B
 - Real power = Watt
 - Apparent power = VA
 - Power Factor = ratio between real and apparent power
-- Watt = Volt * Ampere * Form Factor
+- Watt = Volt * Ampere * Power Factor
 - Power Factor = 0 - 1
 
 ## Power: Label versus actual consumption
